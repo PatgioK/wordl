@@ -4,11 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UserProfile from './components/userprofile';
+import Wordl from './components/wordl';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route path='userprofile' element={<UserProfile />}></Route>
+          <Route path='wordl' element={<Wordl />}></Route>
+        </Route>
+      </Routes>
+
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

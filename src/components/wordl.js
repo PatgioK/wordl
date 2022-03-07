@@ -1,13 +1,9 @@
-import React from "react";
+import "./wordl.css";
 
-export default class Wordl extends React.Component {
-
-    render() {
-        return (
-            <div>
-                <p>test
-                </p>
+export default function Wordl () {
+    return (
+        <div className='wordl'>
+            <h1>wordl test</h1>
             </div>
-        )
-    }
+    )
 }
