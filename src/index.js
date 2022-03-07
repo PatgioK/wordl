@@ -15,6 +15,8 @@ ReactDOM.render(
           <Route path='userprofile' element={<UserProfile />}></Route>
           <Route path='wordl' element={<Wordl />}></Route>
         </Route>
+        
+        <Route path='*' element={<div><h1>There's nothing here!</h1></div>}></Route>
       </Routes>
 
     </BrowserRouter>
